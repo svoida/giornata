@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?> 
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle"> 
+    <channel> 
+        <title>Giornata AppCast</title> 
+        <link>http://giornata.sourceforge.net/appcast.xml</link> 
+        <description>Most recent changes with links to updates.</description> 
+        <language>en</language> 
+        <item> 
+            <title>Version 0.7 (User study deployment with multiple bugfixes)</title> 
+            <description><![CDATA[
+<p>This is a patched version of the software that was released for the first round of the user study on the week of July 16, 2007. This upgrade is strongly recommended for all user study participants, as it includes several improvements that should help to increase its stability and reliability.</p>
+<p><b>NOTE: There is a known problem with Giornata that has not yet been fixed in this release.</b> Giornata may not shut down properly if you log out, restart, or shut down your computer before quitting Giornata. Please close Giornata manually (using the Quit Giornata item on the status bar menu) before you log out of your user account, restart, or shut down your computer. <i>This includes restarts suggested by Apple's Software Update tool.</i></p>
+<p>Changes in this version from the previous version:</p>
+<ul><li>Giornata will no longer manually open Mail to check for unread emails; this feature will only work if you already have Mail running. (Note that if you have a slow network connection, closing Mail or setting your account status to Offline may help to prevent Giornata from slowing down your system.)</li>
+<li>First pass at email support for Microsoft Entourage (2004) and Eudora (6.2+) users. You can select your preferred email client in the Preferences... dialog.</li>
+<li>Users can disable unread email checking altogether on the Contact Palette page of the Preferences dialog box. (Set the unread email check frequency to "Never".)</li>
+<li>New "Presentation Mode" implemented to hide the desktop tags and Contact Palette during presentations. To toggle Giornata's visibility, use the new status menu item labelled "Presentation Mode."</li>
+<li>Added a warning dialog when attempting to close an activity (since there's currently no undo for this operation).</li>
+<li>Added a button to the quit warning dialog to surpress future quit warning dialogs.</li>
+<li>About... dialog now correctly acknowledges all code sources for the project and includes the GPL boilerplate licensing notice.</li>
+<li>Contact Palette should no longer pop open at random intervals on the side of your monitor.</li>
+<li>Eliminated crash when moving items off of the Desktop at startup.</li>
+<li>Giornata now logs an exit code when it quits abnormally (for debugging purposes).</li>
+<li>Multiple other, minor bug fixes as reported by study participants.</li></ul>
+<p>There is no User's Guide update for this version, as very few of the visible features have changed since the 0.5/0.51 releases.</p>
+]]></description> 
+            <pubDate>Mon, 13 Aug 2007 02:00:00</pubDate> 
+            <enclosure sparkle:version="0.70" url="http://downloads.sourceforge.net/project/giornata/Giornata%200.x/0.7/Giornata_0.7.zip" length="792684" type="application/octet-stream"/>
+        </item> 
+    </channel> 
+</rss> 
