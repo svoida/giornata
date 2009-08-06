@@ -1,0 +1,7 @@
+#!/bin/sh
+
+ln -s A Shared/Frameworks/Sparkle.framework/Versions/Current
+ln -s Versions/Current/Headers Shared/Frameworks/Sparkle.framework/Headers
+ln -s Versions/Current/Resources Shared/Frameworks/Sparkle.framework/Resources
+ln -s Versions/Current/Sparkle Shared/Frameworks/Sparkle.framework/Sparkle
+
