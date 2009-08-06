@@ -339,7 +339,6 @@
 		BC0239540B822512002FBC43 /* ADTagDisplayTransformer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ADTagDisplayTransformer.h; sourceTree = "<group>"; };
 		BC0239550B822512002FBC43 /* ADTagDisplayTransformer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ADTagDisplayTransformer.m; sourceTree = "<group>"; };
 		BC0968A00B80FAAE002CD860 /* NSStringWithFSExtensions.m */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = sourcecode.c.objc; path = NSStringWithFSExtensions.m; sourceTree = "<group>"; };
-		BC11CCA60B9F6F1C00AB4AAE /* updates.xml */ = {isa = PBXFileReference; fileEncoding = 30; lastKnownFileType = text.xml; path = updates.xml; sourceTree = "<group>"; };
 		BC1CAA330BC22609001EAACB /* Chord.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = Chord.mp3; sourceTree = "<group>"; };
 		BC1DCFC50B7095CB0065EC4A /* CPRootGroup.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CPRootGroup.h; sourceTree = "<group>"; };
 		BC1DCFC60B7095CB0065EC4A /* CPRootGroup.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CPRootGroup.m; sourceTree = "<group>"; };
@@ -736,14 +735,6 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		BC11CCA20B9F6EE600AB4AAE /* Deployment */ = {
-			isa = PBXGroup;
-			children = (
-				BC11CCA60B9F6F1C00AB4AAE /* updates.xml */,
-			);
-			path = Deployment;
-			sourceTree = "<group>";
-		};
 		BC12DA9E0B7E68F100BA03BB /* Widgets */ = {
 			isa = PBXGroup;
 			children = (
@@ -1357,7 +1348,6 @@
 				EA7A53CA0A86A576000D6B5E /* Source */,
 				EA7A6A070A8708F2000D6B5E /* Resources */,
 				EA7A54870A86A658000D6B5E /* Shared */,
-				BC11CCA20B9F6EE600AB4AAE /* Deployment */,
 				EA7A56A40A86A738000D6B5E /* Products */,
 				EA7A65940A87025C000D6B5E /* External Frameworks and Libraries */,
 			);
