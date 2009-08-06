@@ -1,0 +1,89 @@
+// Quit Dialog
+// Dialog displayed when Giornata was asked to die. There is no nib file for this dialog, so localise here 
+
+// Short question if user wants to quit 
+VTQuitConfirmationDialogMessage = "Are you sure you want to quit Giornata?";
+// Extensive description about what will happen 
+VTQuitConfirmationDialogDescription = "Giornata collects all of your open windows into a single desktop when you quit the application. Simply restart Giornata to re-distribute these windows among their associated activities.";
+// Cancel Button cancels quitting
+VTQuitConfirmationDialogCancel = "Do not quit"; 
+// OK Button quits Giornata
+VTQuitConfirmationDialogOK = "Quit";
+// Another OK Button quits Giornata and doesn't ask again
+VTQuitConfirmationDialogOKForever = "Quit, and don't ask again";
+
+// Permissions warning dialog
+// Displayed on start when Virtue cannot inject code into the dock process. There is no nib file for this dialog, so localise here
+VTPermsNeedsAttention = "Giornata needs your attention";
+VTPermsOKButton = "OK";
+VTPermsIgnoreButton = "Ignore";
+VTPermsMessage = "In order to function properly, Giornata needs to change the permissions it has on your computer. If you select OK, you will be asked for an administrative login and password.\n\nIn you choose not to allow this, Giornata will not function correctly.\n\nFor more information about why this is necessary, please refer to the documentation that came with Giornata.";
+
+// Desktop dirty warning dialogs
+VTDesktopNeedsCleaning = "Giornata needs your attention";
+VTDesktopCleanOKButton = "Move Desktop Contents";
+VTDesktopCleanQuitButton = "Quit";
+VTDesktopCleanMessage = "Giornata uses your Desktop to store files associated with each of your Activities. In order to prevent confusion, Giornata needs to move the existing contents of your Desktop out of the way before starting up. If this is OK, the current contents of your Desktop will be moved to a folder named 'Previous Desktop Contents' in your home directory.";
+VTDesktopCleanFailed = "Giornata encountered a problem";
+VTDesktopCleanFailedOKButton = "Quit";
+// Param 1: where could the files be?
+VTDesktopCleanFailedMessage = "There was a problem moving your Desktop contents out of the way. Giornata will now terminate so that you can fix the problem. (No data should have been lost. Any Desktop items that were successfully moved are located in %@.)";
+// Param 1: where could the files be?
+VTDesktopPopulateFailedMessage = "There was a problem moving your activity contents to the Desktop. Giornata will now terminate so that you can fix the problem. (No data should have been lost. Any Desktop items that were not successfully moved are located in %@.)";
+
+// Close activity warning dialog
+VTActivityCloseWarning = "Are you sure you want to close this activity?";
+VTActivityCloseWarningNamed = "Are you sure you want to close the activity \"%@\"?";
+VTActivityCloseOKButton = "Close Activity";
+VTActivityCloseCancelButton = "Cancel";
+VTActivityCloseMessage = "Closing an activity removes it from Giornata's activity menus and the quick activity switcher, but does not delete the files assoicated with an activity. This action cannot be undone.";
+
+// ActiveDesktop permissions warning dialog
+// Displayed on start when Virtue cannot start the filemonitor as root. There is no nib file for this dialog, so localise here
+FSMonPermsNeedsAttention = "Giornata needs your attention";
+FSMonPermsOKButton = "OK";
+FSMonPermsMessage = "In order to function properly, Giornata needs to change the permissions it has on your computer. If you select OK, you will be asked for an administrative login and password.\n\nIn you choose not to allow this, Giornata will not function correctly.\n\nFor more information about why this is necessary, please refer to the documentation that came with Giornata.";
+
+
+// Statusbar Menu
+// Localizable strings in the Statusbar menu
+
+// No visible applications on the desktop 
+VTStatusbarMenuNoApplication  = "No Applications"; 
+
+
+// Trigger Preferences 
+// Localizable strings for the trigger settings 
+
+// Asks the user to press the key combination to set as the hotkey; please keep
+// this one short 
+VTTriggerPreferencesPressToSet = "Press keys";
+
+// Application Inspector 
+// Localizable strings for the Application Inspector View 
+
+// The application is currently seen as running for Giornata 
+VTApplicationRunningStateYes  = "Application is running"; 
+// The application is currently not seen as running by Giornata 
+VTApplicationRunningStateNo   = "Application currently not running"; 
+
+// Desktop Inspector 
+// Localizable strings for the Desktop Inspector view 
+
+VTDesktopRunningApplicationCountNone  = "no"; 
+VTDesktopRunningApplicationSingluar = "application";
+VTDesktopRunningApplicationPlural   = "applications";
+
+// The number of currently running applications per desktop
+// Param	1: number of applications or None
+// Param	2: multiplicty of application
+VTDesktopRunningApplicationCount = "Showing %@ %@"; 
+
+// Layout 
+// Localizable strings for the simple layout
+VTLayoutName = "Simple Layout";
+
+// NSStringWithTagHandling
+// Display names for various versions of tagged activities
+NSStringTaglessDisplayName = "(untagged)";
+

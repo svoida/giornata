@@ -1,0 +1,177 @@
+$Id: BUGLIST.txt,v 1.42 2007/10/08 16:17:55 svoida Exp $
+
+GIORNATA PROJECT BUGLIST
+------------------------
+
+These are known bugs in Giornata that should be fixed. 
+
+The format for an entry is
+
+        - <user name of discoverer><year><month><day>[<sequence
+          letter>] (<severity>): <description>
+
+- <user name of discoverer> (e.g., svoida) is important in order to
+  get an explanation of a bug report
+- <year><month><day> (e.g., 20070401) is important in order to know
+  how old the bug is
+- <sequence letter> (e.g., a) is important in order to get a unique ID
+  of bug reports; "todo" type "bugs" don't need a sequence number
+- <severity> indicates the criticality of the bug, and should be one of
+  the following words:
+    severe   bug crashes program
+	major    bug is significant and potentially renders it unusable
+	minor    bug is annoying, but does not render program unusable
+	todo     feature request or other non-essential "to-do" type item
+	
+
+********************************************************************************
+* 
+* UNRESOLVED BUGS
+*
+********************************************************************************
+
+General Issues
+--------------
+- svoida20070813a (major): Program not correctly saving state on log off/restart/shut down. (Finder may be terminating first, disabling all Finder-related AppleScript operations executed on cleanup.)
+- svoida20070812b (major): Program crashing on NSImage dealloc in CPEntity dealloc: at CPEntity:48
+- svoida20070812d (major): Program crashing in Foundation's checkForCookieExpiration code (CL and BM, v0.51)
+- svoida@0070903a (major): Program crashing on NSImage dealloc by an AutoreleasePool, possibly in an auxiliary thread (?)
+- svoida20070903b (major): Program crashing for JF (bad CFRelease after LSCopyItemInfoForURL) in [NSString(FSMonitorControllerExtensions) isInvisible:] at FSMonitorController.m:313
+- svoida20070903c (major): Program crashing for JF (bad szone_malloc) as a result of populating the NSPathComponents in [NSString(NSPathUtilities) pathComponents:] at FSMonitorController.m:276
+- svoida20070903d (major): Users are reporting much more beachballing in 0.60 than in previous versions -- possible AppleScript/threading issue?
+- svoida20070409f (minor): Need to identify and eliminate first-run glitches (e.g., activity setup dialog doesn't seem to work until after restart)
+- svoida20070720d (minor): Permissions change warning and about dialogs often gets buried; should probably be created in the front or forced to front after creation so it doesn't get lost and make the app appear unresponsive
+- svoida20070725h (minor): Preferences dialog is pretty messy and non-standard looking; would be good to revisit UI design
+- svoida20070903d (minor): Need support for multiple-word tags
+- svoida20070725  (todo): Giornata won't run under Leopard. (Some sort of problem with the executalbe permissions and running sub-tools?) Fix? Check for compatibility with Spaces?
+- svoida20070725  (todo): Might be a good idea to include user's guide in application bundle and provide access via the status bar menu/help
+- svoida20070903  (todo): Better integration with Mail (e.g., color-coding messages that are relevant to the current activity--similar to the way that Mail.app highlights messages in the current thread--would be useful
+
+Filesystem Interface
+--------------------
+- svoida20070903e (minor): Should provide UI to specify which folders are watched (for non-standard filesystem layouts)
+- svoida20070728  (todo): Would be neat to add a context menu extension for Desktop files to "move" items on the Desktop from activity to activity
+- svoida20070728  (todo): Would be neat to add a context menu extention for Dekstop files to "pin" objects to the Desktop across multiple (some? all?) activities
+
+Virtual Window Manager
+----------------------
+- svoida20070409i (minor): Stop harassing user about desktop items on startup; instead, program should automatically generate a "previous" activity to hold all desktop items and windows that couldn't be automatically placed
+- svoida20070409k (minor): Figure out what to do with hiding windows -- hiding windows from an application open across activities can cause windows to appear to "move" between activities
+- svoida20070409m (minor): Giornata-related windows should be hidden before desktop image capture (mainly the pager, but hiding/excluding the notification bezel would also be nice)
+- svoida20070716a (minor): Weird (but apparently non-destructive) error surfacing about a loose KVO observer on a PNDesktop release (?)
+- svoida20070719c (minor): Tag list is truncated badly on post-activity-change bezel display
+- svoida20070719e (minor): Should probably store activity configuration and contact Palette contents information someplace besides preferences plist -- this information is currently obliterated when activity is closed
+- svoida20070720a (minor): Text rendering in the pager is terrible -- too small and too blurry to be practically usable, especially with more than a few activities open
+- svoida20070725c (minor): Pager should respond to scroll wheel inputs for UI parity with Finder's app switcher
+- svoida20070725j (minor): Ability to share a single window across some--but not all--desktops would be potentially useful (e.g. Parallels, Second Life, Mail); might also be helpful for addressing bug svoida20070409e
+- svoida20070813b (minor): Order to desktops on restart is not necessarily the same as the order on previous run (I think they reinstate in the order that they were created?)
+- svoida20070719f (minor): Potential conflict between Giornata and Expose hot corners feature? (needs investigation)
+- svoida20070903f (minor): Interface for showing tags in the status bar is not terribly discoverable
+- svoida20070903g (minor): Operations dialog for managing window position is pretty unintuitive...would be nice to re-visit that interface design
+- svoida20070903h (minor): Relatively common for users to "lose" a window and not know which activity it's on
+- svoida20070903i (minor): It's easy to forget not to use Command-Q to quit an app that might have windows open in other activities -- maybe trap the keystroke and pop up a warning if it looks like the wrong thing is going to happen?
+- svoida20070903j (minor): If an app is "bound" to a particular activity, clicking the Dock icon should take you to that activity (different than if the app just has windows open in another activity)
+- svoida20070903k (minor): If can be difficult to identify activity desktops at-a-glance and the desktop wallpaper feature seems to be undiscoverable -- perhaps provide some high-level, automatic visual distinction between desktops?
+- svoida20070903l (minor): It would be nice to re-populate activities with bound items/applications on restart
+- svoida20070903m (minor): Quick switcher re-ordering interface is unintuitive -- should provide insertion bar on drag-and-drop, not swap between cells
+- svoida20070903n (minor): Language used to describe binding apps to activities is confusing -- perhaps something like "send it there and keep it there"
+- svoida20070409  (todo): Implement full-screen activity overview/management interface and link into desktop UI (hotkey, menu item)
+- svoida20070409  (todo): Need means for creating a new activity from a template or by re-activating an old activity
+- svoida20070409  (todo): Need to solidify mechanism for and meaning of putting an activity to sleep/deactivating it (including sending "close" messages to affected windows?)
+- svoida20070420  (todo): Maybe have a context-menu option to "create" an activity based on a folder -- inherit tags and move items to the Desktop?
+- svoida20070420  (todo): Maybe have an option to "export" or "close" an activity to a particular folder for archival purposes?
+
+Contact Palette
+---------------
+- svoida20070409e (minor): Requesting view of emails sent by a contact in the Palette requires a change to the email activity; a more elegant solution would probably be better
+- svoida20070725e (minor): Contact Palette seems to be refreshing more frequently than is necessary -- possible sign of a problem?
+- svoida20070725i (minor): Might be useful to accept vCal cards or email address strings dropped on the Palette as a substitute for requiring users to populate their Address Books (might actually serve as a channel for populating AB)
+- svoida20070725m (minor): Unread email checking should have an option to constrain to the Inbox (current behavior) or scan across all mailboxes (potentially useful for people with client-side rules in play)
+- svoida20070803a (minor): Address Book card display doesn't work right if you've got a subgroup selected when the AB pops open to show the card
+- svoida20070903n (minor): Unread email checking could also have an option someplace to specify which folders in the email hierarchy are actually related to the current activity -- scan those (either exclusively or in addition to the main inbox)
+- svoida20070903o (minor): Requiring users to have contacts pre-exist in Address Book is sort of heavyweight -- alternatives? (draw from email, LDAP, ...)
+- svoida20070903p (minor): Finding contacts in a long, scrolling list of many contacts is expensive
+- svoida20070903q (minor): Would be nice to be able to quickly move/copy contacts or contact groups between activities
+- svoida20070903r (minor): Would be nice to have "sticky" contacts across activities
+- svoida20070903s (minor): CP gets in the way of normal work, even with autohide turned on
+- svoida20070903t (minor): Need some way to explcitly force CP to get out of the way
+- svoida20070903u (minor): There isn't necessarily a 1-to-1 correspondence between contacts and activities -- a more complex mapping might be useful (?)
+- svoida20070409  (todo): Semantics of associating a colleague/group with the sharing space needs to be clarified
+- svoida20070719  (todo): Perhaps add an option to the pop-up menu for simply sending an email to a contact or group?
+
+Active Desktop
+--------------
+- svoida20070903v (minor): Tag icon doesn't move with text on multiple monitor reconfiguration!
+- svoida20070903w (minor): Visualization of untagged activities as being explicitly "(untagged)" might be unhelpful -- maybe they're a different class of activity anyway (short term/temp/"unnameable")
+- svoida20070903x (todo): Should have better facility for moving files between activities' desktops (possibility of placing alias to "Activities" folder directly on the desktop?)
+- svoida20070409  (todo): Need to implement sharing behavior for shared space, particularly determining what happens when Bob messes with a file that Alice shared in the space
+- svoida20070409  (todo): Need to finalize behavior for linking shared activities/creating new activities per a sharing request
+- svoida20070409  (todo): Suggest tags for activity (drop down box?) based on activity content
+- svoida20070725  (todo): It would be convenient to watch for changes in the wallpaper from System Preferences and respect them
+
+
+********************************************************************************
+* 
+* RESOLVED BUGS
+* 
+********************************************************************************
+
+General Issues
+--------------
+- svoida20070409a (severe): Program regularly crashes, somehow related to a premature release of some image item (?) - having trouble reproducing error in debug build
+- svoida20070409b (major): Program is using an insane amount of memory (~300Mb for four activities)
+- svoida20070418a (minor): Need to eliminate the stupid longValue exception during startup (!)
+- svoida20070719d (minor): Should probably log the termination code when program exits abnormally
+- svoida20070409  (todo): Need a video to demonstrate how the system works
+- svoida20070409  (todo): Need a manual/handout to explain how the system works
+- svoida20070720b (major): Program crashing in applicationShouldTerminate: at VTAppDelegate:458
+- svoida20070725k (minor): Should add checkbox to quit warning dialog to allows users the option to skip subsequent warnings
+- svoida20070725  (todo): Need to credit all contributors in the About dialog
+- svoida20070812a (major): Program crashing in sanitizeDesktop: at VTAppDelegate:380
+- svoida20070812c (major): Program crashing in doActivateDesktop:usingTransition:withOptions:andDuration: at VTDesktopController.m:629 **could find no reason for crash at this line**
+
+Filesystem Interface
+--------------------
+- svoida20070409c (major): File tagging is sloppy; if there's a delay between a file change (e.g., moving a file to an activity folder on switches) and the receipt of the notification (e.g., after the actity switch), then files can pick up spurious tags
+- svoida20070409g (minor): Activity folders do not automatically inherit the appropriate tags; tagger may either need to tag all subfolders in a path, or tag the activity store folders explicitly
+- svoida20070409h (minor): Activity folders should have more semantically-meaningful names
+- svoida20070409x (minor): Filesystem monitor should be started sooner (outside of Active Desktop?) so that incorrect permissions can be detected earlier in the startup process
+- svoida20070415a (minor): Spotlight is a bit flaky about picking up on tag changes sometimes...not sure if/how to fix
+
+Virtual Window Manager
+----------------------
+- svoida20070409j (minor): Window operations menu doesn't appear when all activities are unnamed
+- svoida20070409l (minor): Per-activity window list needs to be kept up-to-date more frequently than on shut down (to recover more gracefully from crashes)
+- svoida20070409n (minor): Pager rendering should better handle long tag lists on activities (e.g., vertical layout or good truncation policy)
+- svoida20070409o (minor): Active desktops lose highlight after being drag-reordered in the pager
+- svoida20070409p (minor): Pager and cell size should scale up and down as the number of activities decreases or increases, respectively, so that all will fit on screen (an alternative would be to come up with a workable wrapping/scrolling mechanism)
+- svoida20070409q (minor): New activities should pick up a default background wallpaper instead of inheriting the wallpaper from the activity in which they are created
+- svoida20070409r (minor): Default desktop wallpaper should be restored on program shutdown
+- svoida20070409s (minor): Need to re-visit activity/application management interfaces; probably need to create more approriate tools to manage this stuff and then remove the default Virtue dialogs from the Menu Bar menu
+- svoida20070719a (major): System is apparently crashing after attempting to move previous desktop contents out of the way (or silently failing?) -- potentially at VTAppDelegate:355
+- svoida20070719b (major): Probably either need to implement an undo for closing an activity or provide a warning dialog, since it's currently quiet and potentially dangerous
+
+Contact Palette
+---------------
+- svoida20070409d (major): Contacts associated with an activity need to be persisted to disk and restored on program restart
+- svoida20070409t (minor): Activities group needs to be populated and kept correctly up-to-date
+- svoida20070725a (major): Contact Palette always opens and connects to Mail.app with *some* frequency; need some way to suspend this behavior if Mail hangs when not connected to a particular network
+- svoida20070409u (minor): Redesign root group to better represent an aggregation of all activities' contacts
+- svoida20070409v (minor): Contact Palette total unread items count does not reset on activity switches, which causes spurious new item notifications when switching from an activity with fewer unread items to one with more
+- svoida20070409w (minor): Address Book group is picking up unread counts, which is unnecessary and potentially resource-consuming
+- svoida20070418b (minor): Need to enable (and honor) the frequency-of-email-checking preference
+- svoida20070418c (major): Address Book is only parsed out at the beginning...any changes during program execution are ignored
+- svoida20070420a (major): Display emails and display AB card not working on Intel -- potential problem with using AppleScript to send keystrokes?
+- svoida20070425a (minor): Need to unset CP selection on activity change -- right now, the selection (and add/remove button availability) persist across activities, making it possible to, for example, delete the AB group
+- svoida20070527a (minor): Should check to see if assistive device support and keyboard access is turned on to prevent problems with scripting bits
+- svoida20070713a (minor): Autohide does weird things on a multimon setup
+- svoida20070720c (minor): Need to set default email check frequency value property in user prefs on first startup -- always complains about an invalid value!
+- svoida20070725b (major): Contact Palette should be hide-able or closeable (for giving presentations, for example)
+- svoida20070725d (minor): Probably should have an option to interface with Entourage instead of Mail when appropriate
+- svoida20070725f (minor): When refreshing Contact Palette, refresh routine should note hide/reveal state of palette and attempt to preserve it (to cut down on annoying, extraneous reveals)
+- svoida20070725l (minor): Existing Mail AppleScripts probably ought to check for Mail's online status before engaging in a drawn-out information request operation that might result in a beachball
+- svoida20070803b (minor): Probably should have an option to interface with Eudora instead of Mail when appropriate
+
+Active Desktop
+--------------
+- svoida20070725g (minor): Desktop decorations should be hide-able (for giving presentations, for example); maybe contents of desktop, too?
