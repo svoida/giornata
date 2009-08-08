@@ -77,6 +77,7 @@
 			children = (
 				080E96DDFE201D6D7F000001 /* Classes */,
 				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				B0CF9376102D767A00A8DB01 /* Additional Headers */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
@@ -113,6 +114,14 @@
 			);
 			name = Frameworks;
 			path = frameworks;
+			sourceTree = "<group>";
+		};
+		B0CF9376102D767A00A8DB01 /* Additional Headers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Additional Headers";
+			path = include;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
