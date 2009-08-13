@@ -21,9 +21,11 @@
 		29B97316FDCFA39411CA2CEA /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		29B97324FDCFA39411CA2CEA /* AppKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AppKit.framework; path = /System/Library/Frameworks/AppKit.framework; sourceTree = "<absolute>"; };
 		29B97325FDCFA39411CA2CEA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = /System/Library/Frameworks/Foundation.framework; sourceTree = "<absolute>"; };
-		32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Giornata_Prefix.pch; path = ../Giornata_Prefix.pch; sourceTree = "<group>"; };
+		32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Giornata_Prefix.pch; sourceTree = SOURCE_ROOT; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Giornata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giornata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B04730611034DB15005AD192 /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
+		B04730621034DB15005AD192 /* CoreDockPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDockPrivate.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -38,12 +40,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		080E96DDFE201D6D7F000001 /* Classes */ = {
+		080E96DDFE201D6D7F000001 /* Core Application */ = {
 			isa = PBXGroup;
 			children = (
+				32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */,
+				29B97316FDCFA39411CA2CEA /* main.m */,
 			);
-			name = Classes;
-			path = source;
+			name = "Core Application";
+			path = core;
 			sourceTree = "<group>";
 		};
 		1058C7A0FEA54F0111CA2CBB /* Linked Frameworks */ = {
@@ -75,24 +79,13 @@
 		29B97314FDCFA39411CA2CEA /* Giornata */ = {
 			isa = PBXGroup;
 			children = (
-				080E96DDFE201D6D7F000001 /* Classes */,
-				29B97315FDCFA39411CA2CEA /* Other Sources */,
+				B047305E1034DAF1005AD192 /* Source */,
 				B0CF9376102D767A00A8DB01 /* Additional Headers */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
 				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = Giornata;
-			sourceTree = "<group>";
-		};
-		29B97315FDCFA39411CA2CEA /* Other Sources */ = {
-			isa = PBXGroup;
-			children = (
-				32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */,
-				29B97316FDCFA39411CA2CEA /* main.m */,
-			);
-			name = "Other Sources";
-			path = source;
 			sourceTree = "<group>";
 		};
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
@@ -116,9 +109,20 @@
 			path = frameworks;
 			sourceTree = "<group>";
 		};
+		B047305E1034DAF1005AD192 /* Source */ = {
+			isa = PBXGroup;
+			children = (
+				080E96DDFE201D6D7F000001 /* Core Application */,
+			);
+			name = Source;
+			path = source;
+			sourceTree = "<group>";
+		};
 		B0CF9376102D767A00A8DB01 /* Additional Headers */ = {
 			isa = PBXGroup;
 			children = (
+				B04730611034DB15005AD192 /* CGSPrivate.h */,
+				B04730621034DB15005AD192 /* CoreDockPrivate.h */,
 			);
 			name = "Additional Headers";
 			path = include;
