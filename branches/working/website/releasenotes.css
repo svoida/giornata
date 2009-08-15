@@ -1,0 +1,49 @@
+/* elements */
+
+BODY {
+	font-family: Lucida Grande,Verdana,Arial,Helvetica,sans-serif;
+	font-size: 12px;
+	line-height: 135%;
+	margin: 0px;
+	padding: 16px;
+}
+
+H1 {
+	background: url(images/icon.png) top left no-repeat;
+	color: #2a802a;
+	font-family: Gill Sans,Lucida Grande,Verdana,Arial,Helvetica,sans-serif;
+	font-size: 24px;
+	font-weight: normal;
+	line-height: 31px;
+	margin: 0px;
+	padding-left: 41px;
+	padding-bottom: 0.2em;
+}
+
+H2 {
+	background: url(images/h2-bg.png) top left no-repeat;
+	color: #111;
+	font-size: 14px;
+	font-weight: normal;
+	left: -40px;
+	line-height: normal;
+	margin-top: 1.5em;
+	margin-bottom: 1em;
+	position: relative;
+	padding-top: 6px;
+	padding-left: 40px;
+	padding-bottom: 8px;
+}
+
+PRE {
+    font-family: Monaco, Courier New, monospace;
+    font-size: 12px;
+}
+UL {
+    list-style-image: url(images/bullet.png);
+    margin-left: 0px;
+    padding-left: 20px;
+}
+UL UL {
+    list-style: circle outside none;
+}
