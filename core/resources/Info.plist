@@ -20,10 +20,10 @@
 	<string>????</string>
 	<key>CFBundleVersion</key>
 	<string>${CURRENT_PROJECT_VERSION}.$Revision$</string>
-	<key>CFBundleGetInfoString</key>
-	<string>${CURRENT_PROJECT_VERSION} (Revision $Revision$)</string>
 	<key>CFBundleShortVersionString</key>
 	<string>${CURRENT_PROJECT_VERSION}</string>
+	<key>CFBundleGetInfoString</key>
+	<string>${CURRENT_PROJECT_VERSION} (Revision $Revision$)</string>
 	<key>NSMainNibFile</key>
 	<string>MainMenu</string>
 	<key>NSPrincipalClass</key>
@@ -32,5 +32,11 @@
 	<string>(C) 2006-2009 Stephen Voida</string>
 	<key>LSMinimumSystemVersion</key>
 	<string>10.5.0</string>
+	<key>SUPublicDSAKeyFile</key>
+	<string>dsa_pub.pem</string>
+	<key>SUFeedURL</key>
+	<string>http://giornata.sourceforge.net/appcast.xml</string>
+	<key>SUScheduledCheckInterval</key>
+	<string>86400</string>
 </dict>
 </plist>

@@ -6,12 +6,54 @@
 	objectVersion = 45;
 	objects = {
 
+/* Begin PBXAggregateTarget section */
+		B0E1469E1035FBDE005B161C /* Distribution */ = {
+			isa = PBXAggregateTarget;
+			buildConfigurationList = B0E146A81035FBF0005B161C /* Build configuration list for PBXAggregateTarget "Distribution" */;
+			buildPhases = (
+				B0E1469D1035FBDE005B161C /* ShellScript */,
+			);
+			dependencies = (
+				B0E146AA1035FBFC005B161C /* PBXTargetDependency */,
+			);
+			name = Distribution;
+			productName = Distribution;
+		};
+/* End PBXAggregateTarget section */
+
 /* Begin PBXBuildFile section */
 		1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 1DDD58140DA1D0A300B32029 /* MainMenu.xib */; };
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B0E1466F1034E169005B161C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1466E1034E169005B161C /* Sparkle.framework */; };
+		B0E146841034E1C3005B161C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0E1466E1034E169005B161C /* Sparkle.framework */; };
+		B0E146891035F57D005B161C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = B0E146881035F57D005B161C /* dsa_pub.pem */; };
+		B0E14705103675A2005B161C /* Giornata.icns in Resources */ = {isa = PBXBuildFile; fileRef = B0E14704103675A2005B161C /* Giornata.icns */; };
 /* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		B0E146A91035FBFC005B161C /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 8D1107260486CEB800E47090;
+			remoteInfo = Giornata;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		B0E146831034E1B1005B161C /* CopyFiles */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				B0E146841034E1C3005B161C /* Sparkle.framework in CopyFiles */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
 		089C165DFE840E0CC02AAC07 /* English */ = {isa = PBXFileReference; fileEncoding = 10; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
@@ -26,6 +68,9 @@
 		8D1107320486CEB800E47090 /* Giornata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giornata.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B04730611034DB15005AD192 /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
 		B04730621034DB15005AD192 /* CoreDockPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDockPrivate.h; sourceTree = "<group>"; };
+		B0E1466E1034E169005B161C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
+		B0E146881035F57D005B161C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
+		B0E14704103675A2005B161C /* Giornata.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Giornata.icns; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -34,6 +79,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */,
+				B0E1466F1034E169005B161C /* Sparkle.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -56,6 +102,7 @@
 			isa = PBXGroup;
 			children = (
 				1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */,
+				B0E1466E1034E169005B161C /* Sparkle.framework */,
 			);
 			name = "Linked Frameworks";
 			sourceTree = "<group>";
@@ -92,6 +139,8 @@
 		29B97317FDCFA39411CA2CEA /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				B0E1470310367597005B161C /* Icons */,
+				B0E146881035F57D005B161C /* dsa_pub.pem */,
 				8D1107310486CEB800E47090 /* Info.plist */,
 				089C165CFE840E0CC02AAC07 /* InfoPlist.strings */,
 				1DDD58140DA1D0A300B32029 /* MainMenu.xib */,
@@ -137,6 +186,14 @@
 			path = include;
 			sourceTree = "<group>";
 		};
+		B0E1470310367597005B161C /* Icons */ = {
+			isa = PBXGroup;
+			children = (
+				B0E14704103675A2005B161C /* Giornata.icns */,
+			);
+			name = Icons;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -148,6 +205,7 @@
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
 				B0758BAD102D6D9A0040FA5C /* ShellScript */,
+				B0E146831034E1B1005B161C /* CopyFiles */,
 			);
 			buildRules = (
 			);
@@ -172,6 +230,7 @@
 			projectRoot = "";
 			targets = (
 				8D1107260486CEB800E47090 /* Giornata */,
+				B0E1469E1035FBDE005B161C /* Distribution */,
 			);
 		};
 /* End PBXProject section */
@@ -183,6 +242,8 @@
 			files = (
 				8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */,
 				1DDD58160DA1D0A300B32029 /* MainMenu.xib in Resources */,
+				B0E146891035F57D005B161C /* dsa_pub.pem in Resources */,
+				B0E14705103675A2005B161C /* Giornata.icns in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +263,19 @@
 			shellPath = "/usr/bin/perl -w";
 			shellScript = "# Xcode auto-versioning script for Subversion\n# by Axel Andersson, modified by Daniel Jalkut to add\n# \"--revision HEAD\" to the svn info line, which allows\n# the latest revision to always be used.\n\nuse strict;\n\ndie \"$0: Must be run from Xcode\" unless $ENV{\"BUILT_PRODUCTS_DIR\"};\n\n# Get the current subversion revision number and use it to set the CFBundleVersion value\nmy $REV = `/usr/bin/svnversion -n ./`;\nmy $INFO = \"$ENV{BUILT_PRODUCTS_DIR}/$ENV{WRAPPER_NAME}/Contents/Info.plist\";\n#my $INFO = \"$ENV{BUILT_PRODUCTS_DIR}/$ENV{INFOPLIST_PATH}\";\n\nmy $version = $REV;\n\n# (Match the last group of digits and optional letter M/S):\n# better yet still functional regex via Kevin \"Regex Nerd\" Ballard\n($version =~ m/\\d+[MS]*$/) && ($version = $&);\n\ndie \"$0: No Subversion revision found\" unless $version;\n\nopen(FH, \"$INFO\") or die \"$0: $INFO: $!\";\nmy $info = join(\"\", <FH>);\nclose(FH);\n\n$info =~ s/\\$Revision\\$/$version/g;\n\nopen(FH, \">$INFO\") or die \"$0: $INFO: $!\";\nprint FH $info;\nclose(FH);\n";
 		};
+		B0E1469D1035FBDE005B161C /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/bash;
+			shellScript = "set -o errexit\n\n[ $BUILD_STYLE = Release ] || { echo Distribution target requires \"'Release'\" build style; false; }\n\nVERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleVersion)\nSHORT_VERSION=$(defaults read \"$BUILT_PRODUCTS_DIR/$PROJECT_NAME.app/Contents/Info\" CFBundleShortVersionString)\nDOWNLOAD_BASE_URL=\"http://downloads.sourceforge.net/project/giornata/Giornata%201.x\"\nRELEASENOTES_URL=\"http://giornata.sourceforge.net/releasenotes.html#version-$VERSION\"\n\nARCHIVE_TEMPLATE_DIRECTORY=\"$PROJECT_DIR/masters\"\nARCHIVE_TEMPLATE_FILENAME=\"Template.dmg\"\nARCHIVE_FILENAME=\"${PROJECT_NAME}_$VERSION.dmg\"\nWORKING_IDENTIFIER=\"giornata-temp\"\nDOWNLOAD_URL=\"$DOWNLOAD_BASE_URL/$SHORT_VERSION/$ARCHIVE_FILENAME\"\nKEYCHAIN_PRIVKEY_NAME=\"Sparkle Private Key - Giornata\"\n\nWD=$PWD\ncd \"$BUILT_PRODUCTS_DIR\"\nrm -f \"$PROJECT_NAME\"*.dmg\ncp \"$ARCHIVE_TEMPLATE_DIRECTORY/$ARCHIVE_TEMPLATE_FILENAME.bz2\" .\nbunzip2 \"$ARCHIVE_TEMPLATE_FILENAME.bz2\"\nmv \"$ARCHIVE_TEMPLATE_FILENAME\" \"$WORKING_IDENTIFIER.dmg\"\nhdiutil attach \"$WORKING_IDENTIFIER.dmg\" -noautoopen -quiet -mountpoint \"$WORKING_IDENTIFIER\"\nditto -rsrc \"$PROJECT_NAME.app\" \"$WORKING_IDENTIFIER/$PROJECT_NAME.app\"\nARCHIVE_DEV=`hdiutil info | grep \"$WORKING_IDENTIFIER\" | grep \"Apple_HFS\" | awk '{print $1}'`\nhdiutil detach $ARCHIVE_DEV -quiet -force\nhdiutil convert \"$WORKING_IDENTIFIER.dmg\" -quiet -format UDZO -imagekey zlib-level=9 -o \"$ARCHIVE_FILENAME\"\nrm -f \"$WORKING_IDENTIFIER.dmg\"\n\nSIZE=$(stat -f %z \"$ARCHIVE_FILENAME\")\nPUBDATE=$(date +\"%a, %d %b %G %T %z\")\nSIGNATURE=$(\n\topenssl dgst -sha1 -binary < \"$ARCHIVE_FILENAME\" \\\n\t| openssl dgst -dss1 -sign <(security find-generic-password -g -s \"$KEYCHAIN_PRIVKEY_NAME\" 2>&1 1>/dev/null | perl -pe '($_) = /\"(.+)\"/; s/\\\\012/\\n/g') \\\n\t| openssl enc -base64\n)\n\n[ $SIGNATURE ] || { echo Unable to load signing private key with name \"'$KEYCHAIN_PRIVKEY_NAME'\" from keychain; false; }\n\ncat >appcast-item.xml <<EOF\n\n\t\t<item>\n\t\t\t<title>Version $VERSION</title>\n\t\t\t<sparkle:releaseNotesLink>\n\t\t\t\t$RELEASENOTES_URL\n\t\t\t</sparkle:releaseNotesLink>\n\t\t\t<pubDate>$PUBDATE</pubDate>\n\t\t\t<enclosure\n\t\t\t\turl=\"$DOWNLOAD_URL\"\n\t\t\t\tsparkle:version=\"$VERSION\"\n\t\t\t\ttype=\"application/octet-stream\"\n\t\t\t\tlength=\"$SIZE\"\n\t\t\t\tsparkle:dsaSignature=\"$SIGNATURE\"\n\t\t\t/>\n\t\t</item>\n\nEOF\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -214,6 +288,14 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		B0E146AA1035FBFC005B161C /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 8D1107260486CEB800E47090 /* Giornata */;
+			targetProxy = B0E146A91035FBFC005B161C /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		089C165CFE840E0CC02AAC07 /* InfoPlist.strings */ = {
@@ -235,12 +317,37 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B0E1469F1035FBDF005B161C /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				PRODUCT_NAME = Distribution;
+			};
+			name = Debug;
+		};
+		B0E146A01035FBDF005B161C /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				PRODUCT_NAME = Distribution;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		C01FCF4B08A954540054247B /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				COPY_PHASE_STRIP = NO;
 				CURRENT_PROJECT_VERSION = 1.0;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
 				GCC_ENABLE_OBJC_GC = required;
@@ -262,6 +369,10 @@
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CURRENT_PROJECT_VERSION = 1.0;
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\"$(SRCROOT)/frameworks\"",
+				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_MODEL_TUNING = G5;
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
@@ -303,6 +414,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B0E146A81035FBF0005B161C /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B0E1469F1035FBDF005B161C /* Debug */,
+				B0E146A01035FBDF005B161C /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		C01FCF4A08A954540054247B /* Build configuration list for PBXNativeTarget "Giornata" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
