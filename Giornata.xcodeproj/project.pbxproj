@@ -104,6 +104,8 @@
 		B03093A01037389E00737D19 /* GiornataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiornataController.m; sourceTree = "<group>"; };
 		B04730611034DB15005AD192 /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
 		B04730621034DB15005AD192 /* CoreDockPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDockPrivate.h; sourceTree = "<group>"; };
+		B04B0FBB103F48D5006B8173 /* Notifications.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Notifications.h; sourceTree = "<group>"; };
+		B04B0FBC103F4A37006B8173 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Constants.h; sourceTree = "<group>"; };
 		B0E1466E1034E169005B161C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
 		B0E146881035F57D005B161C /* dsa_pub.pem */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = dsa_pub.pem; sourceTree = "<group>"; };
 		B0E14704103675A2005B161C /* Giornata.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Giornata.icns; sourceTree = "<group>"; };
@@ -272,6 +274,16 @@
 			path = source;
 			sourceTree = "<group>";
 		};
+		B04B0FB8103F4887006B8173 /* Private Framework Headers */ = {
+			isa = PBXGroup;
+			children = (
+				B04730611034DB15005AD192 /* CGSPrivate.h */,
+				B04730621034DB15005AD192 /* CoreDockPrivate.h */,
+			);
+			name = "Private Framework Headers";
+			path = "private-framework-headers";
+			sourceTree = "<group>";
+		};
 		B05701DC1034DCFC00E69BE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
@@ -295,8 +307,9 @@
 		B0CF9376102D767A00A8DB01 /* Shared Headers */ = {
 			isa = PBXGroup;
 			children = (
-				B04730611034DB15005AD192 /* CGSPrivate.h */,
-				B04730621034DB15005AD192 /* CoreDockPrivate.h */,
+				B04B0FB8103F4887006B8173 /* Private Framework Headers */,
+				B04B0FBC103F4A37006B8173 /* Constants.h */,
+				B04B0FBB103F48D5006B8173 /* Notifications.h */,
 			);
 			name = "Shared Headers";
 			path = include;
