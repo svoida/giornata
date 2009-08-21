@@ -26,13 +26,26 @@
 		8D11072B0486CEB800E47090 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 089C165CFE840E0CC02AAC07 /* InfoPlist.strings */; };
 		8D11072D0486CEB800E47090 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 29B97316FDCFA39411CA2CEA /* main.m */; settings = {ATTRIBUTES = (); }; };
 		8D11072F0486CEB800E47090 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1058C7A1FEA54F0111CA2CBB /* Cocoa.framework */; };
+		B030931510372E1B00737D19 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = B030931110372E1B00737D19 /* InfoPlist.strings */; };
+		B030932B10372F4800737D19 /* DesktopStorage.plugin in Copy PlugIn Files */ = {isa = PBXBuildFile; fileRef = B030930A10372E0100737D19 /* DesktopStorage.plugin */; };
+		B030933E10372FCB00737D19 /* Cocoa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B030933D10372FCB00737D19 /* Cocoa.framework */; };
+		B03093851037353800737D19 /* DesktopStorage.xib in Resources */ = {isa = PBXBuildFile; fileRef = B03093841037353800737D19 /* DesktopStorage.xib */; };
+		B030938E1037362E00737D19 /* DesktopStorage.m in Sources */ = {isa = PBXBuildFile; fileRef = B030938D1037362E00737D19 /* DesktopStorage.m */; };
+		B03093A11037389E00737D19 /* GiornataController.m in Sources */ = {isa = PBXBuildFile; fileRef = B03093A01037389E00737D19 /* GiornataController.m */; };
 		B0E1466F1034E169005B161C /* Sparkle.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B0E1466E1034E169005B161C /* Sparkle.framework */; };
-		B0E146841034E1C3005B161C /* Sparkle.framework in CopyFiles */ = {isa = PBXBuildFile; fileRef = B0E1466E1034E169005B161C /* Sparkle.framework */; };
+		B0E146841034E1C3005B161C /* Sparkle.framework in Copy Framework Files */ = {isa = PBXBuildFile; fileRef = B0E1466E1034E169005B161C /* Sparkle.framework */; };
 		B0E146891035F57D005B161C /* dsa_pub.pem in Resources */ = {isa = PBXBuildFile; fileRef = B0E146881035F57D005B161C /* dsa_pub.pem */; };
 		B0E14705103675A2005B161C /* Giornata.icns in Resources */ = {isa = PBXBuildFile; fileRef = B0E14704103675A2005B161C /* Giornata.icns */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		B030932910372F3E00737D19 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = B030930910372E0100737D19;
+			remoteInfo = DesktopStorage;
+		};
 		B0E146A91035FBFC005B161C /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 29B97313FDCFA39411CA2CEA /* Project object */;
@@ -43,14 +56,26 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		B0E146831034E1B1005B161C /* CopyFiles */ = {
+		B06ECCBE10372A3D004F9F58 /* Copy PlugIn Files */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				B030932B10372F4800737D19 /* DesktopStorage.plugin in Copy PlugIn Files */,
+			);
+			name = "Copy PlugIn Files";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B0E146831034E1B1005B161C /* Copy Framework Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				B0E146841034E1C3005B161C /* Sparkle.framework in CopyFiles */,
+				B0E146841034E1C3005B161C /* Sparkle.framework in Copy Framework Files */,
 			);
+			name = "Copy Framework Files";
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXCopyFilesBuildPhase section */
@@ -66,6 +91,17 @@
 		32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Giornata_Prefix.pch; sourceTree = "<group>"; };
 		8D1107310486CEB800E47090 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D1107320486CEB800E47090 /* Giornata.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Giornata.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		B030930A10372E0100737D19 /* DesktopStorage.plugin */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = DesktopStorage.plugin; sourceTree = BUILT_PRODUCTS_DIR; };
+		B030930F10372E1B00737D19 /* DesktopStorage_Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopStorage_Prefix.pch; sourceTree = "<group>"; };
+		B030931210372E1B00737D19 /* English */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.strings; name = English; path = English.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		B030931310372E1B00737D19 /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B030933D10372FCB00737D19 /* Cocoa.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Cocoa.framework; path = System/Library/Frameworks/Cocoa.framework; sourceTree = SDKROOT; };
+		B030937F103734BD00737D19 /* English */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = English; path = English.lproj/DesktopStorage.xib; sourceTree = "<group>"; };
+		B030938C1037362E00737D19 /* DesktopStorage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DesktopStorage.h; sourceTree = "<group>"; };
+		B030938D1037362E00737D19 /* DesktopStorage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DesktopStorage.m; sourceTree = "<group>"; };
+		B030939B103737D000737D19 /* GiornataPlugInProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiornataPlugInProtocol.h; sourceTree = "<group>"; };
+		B030939F1037389E00737D19 /* GiornataController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GiornataController.h; sourceTree = "<group>"; };
+		B03093A01037389E00737D19 /* GiornataController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GiornataController.m; sourceTree = "<group>"; };
 		B04730611034DB15005AD192 /* CGSPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CGSPrivate.h; sourceTree = "<group>"; };
 		B04730621034DB15005AD192 /* CoreDockPrivate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CoreDockPrivate.h; sourceTree = "<group>"; };
 		B0E1466E1034E169005B161C /* Sparkle.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Sparkle.framework; sourceTree = "<group>"; };
@@ -83,6 +119,14 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B030930810372E0100737D19 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B030933E10372FCB00737D19 /* Cocoa.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -92,6 +136,7 @@
 				B05701DC1034DCFC00E69BE4 /* Classes */,
 				B047305E1034DAF1005AD192 /* Other Sources */,
 				29B97317FDCFA39411CA2CEA /* Resources */,
+				29B97323FDCFA39411CA2CEA /* Frameworks */,
 				32CA4F630368D1EE00C91783 /* Giornata_Prefix.pch */,
 			);
 			name = "Core Application";
@@ -121,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				8D1107320486CEB800E47090 /* Giornata.app */,
+				B030930A10372E0100737D19 /* DesktopStorage.plugin */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -129,8 +175,8 @@
 			isa = PBXGroup;
 			children = (
 				080E96DDFE201D6D7F000001 /* Core Application */,
-				B0CF9376102D767A00A8DB01 /* Additional Headers */,
-				29B97323FDCFA39411CA2CEA /* Frameworks */,
+				B06ECC9C10372703004F9F58 /* PlugIn Modules */,
+				B0CF9376102D767A00A8DB01 /* Shared Headers */,
 				19C28FACFE9D520D11CA2CBB /* Products */,
 			);
 			name = Giornata;
@@ -159,6 +205,64 @@
 			path = frameworks;
 			sourceTree = "<group>";
 		};
+		B03092F910372D9C00737D19 /* DesktopStorage */ = {
+			isa = PBXGroup;
+			children = (
+				B030932710372EF200737D19 /* Classes */,
+				B030932810372F1D00737D19 /* Other Sources */,
+				B030931010372E1B00737D19 /* Resources */,
+				B030930F10372E1B00737D19 /* DesktopStorage_Prefix.pch */,
+				B03093481037304C00737D19 /* Frameworks */,
+			);
+			name = DesktopStorage;
+			path = "desktop-storage";
+			sourceTree = "<group>";
+		};
+		B030931010372E1B00737D19 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B030931110372E1B00737D19 /* InfoPlist.strings */,
+				B030931310372E1B00737D19 /* Info.plist */,
+				B03093841037353800737D19 /* DesktopStorage.xib */,
+			);
+			name = Resources;
+			path = resources;
+			sourceTree = "<group>";
+		};
+		B030932710372EF200737D19 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				B030938C1037362E00737D19 /* DesktopStorage.h */,
+				B030938D1037362E00737D19 /* DesktopStorage.m */,
+			);
+			name = Classes;
+			path = source;
+			sourceTree = "<group>";
+		};
+		B030932810372F1D00737D19 /* Other Sources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = "Other Sources";
+			path = source;
+			sourceTree = "<group>";
+		};
+		B03093481037304C00737D19 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B030934C1037306500737D19 /* Linked Frameworks */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B030934C1037306500737D19 /* Linked Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				B030933D10372FCB00737D19 /* Cocoa.framework */,
+			);
+			name = "Linked Frameworks";
+			sourceTree = "<group>";
+		};
 		B047305E1034DAF1005AD192 /* Other Sources */ = {
 			isa = PBXGroup;
 			children = (
@@ -171,18 +275,30 @@
 		B05701DC1034DCFC00E69BE4 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				B030939F1037389E00737D19 /* GiornataController.h */,
+				B03093A01037389E00737D19 /* GiornataController.m */,
 			);
 			name = Classes;
 			path = source;
 			sourceTree = "<group>";
 		};
-		B0CF9376102D767A00A8DB01 /* Additional Headers */ = {
+		B06ECC9C10372703004F9F58 /* PlugIn Modules */ = {
+			isa = PBXGroup;
+			children = (
+				B030939B103737D000737D19 /* GiornataPlugInProtocol.h */,
+				B03092F910372D9C00737D19 /* DesktopStorage */,
+			);
+			name = "PlugIn Modules";
+			path = plugins;
+			sourceTree = "<group>";
+		};
+		B0CF9376102D767A00A8DB01 /* Shared Headers */ = {
 			isa = PBXGroup;
 			children = (
 				B04730611034DB15005AD192 /* CGSPrivate.h */,
 				B04730621034DB15005AD192 /* CoreDockPrivate.h */,
 			);
-			name = "Additional Headers";
+			name = "Shared Headers";
 			path = include;
 			sourceTree = "<group>";
 		};
@@ -204,18 +320,38 @@
 				8D1107290486CEB800E47090 /* Resources */,
 				8D11072C0486CEB800E47090 /* Sources */,
 				8D11072E0486CEB800E47090 /* Frameworks */,
-				B0758BAD102D6D9A0040FA5C /* ShellScript */,
-				B0E146831034E1B1005B161C /* CopyFiles */,
+				B0758BAD102D6D9A0040FA5C /* Run Versioning Script */,
+				B0E146831034E1B1005B161C /* Copy Framework Files */,
+				B06ECCBE10372A3D004F9F58 /* Copy PlugIn Files */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				B030932A10372F3E00737D19 /* PBXTargetDependency */,
 			);
 			name = Giornata;
 			productInstallPath = "$(HOME)/Applications";
 			productName = Giornata;
 			productReference = 8D1107320486CEB800E47090 /* Giornata.app */;
 			productType = "com.apple.product-type.application";
+		};
+		B030930910372E0100737D19 /* DesktopStorage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B030930E10372E0200737D19 /* Build configuration list for PBXNativeTarget "DesktopStorage" */;
+			buildPhases = (
+				B030930610372E0100737D19 /* Resources */,
+				B030930710372E0100737D19 /* Sources */,
+				B030930810372E0100737D19 /* Frameworks */,
+				B0309351103730EC00737D19 /* Run Versioning Script */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = DesktopStorage;
+			productName = DesktopStorage;
+			productReference = B030930A10372E0100737D19 /* DesktopStorage.plugin */;
+			productType = "com.apple.product-type.bundle";
 		};
 /* End PBXNativeTarget section */
 
@@ -229,6 +365,7 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				B030930910372E0100737D19 /* DesktopStorage */,
 				8D1107260486CEB800E47090 /* Giornata */,
 				B0E1469E1035FBDE005B161C /* Distribution */,
 			);
@@ -247,16 +384,40 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		B030930610372E0100737D19 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B030931510372E1B00737D19 /* InfoPlist.strings in Resources */,
+				B03093851037353800737D19 /* DesktopStorage.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		B0758BAD102D6D9A0040FA5C /* ShellScript */ = {
+		B0309351103730EC00737D19 /* Run Versioning Script */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
 			inputPaths = (
 			);
+			name = "Run Versioning Script";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = "/usr/bin/perl -w";
+			shellScript = "# Xcode auto-versioning script for Subversion\n# by Axel Andersson, modified by Daniel Jalkut to add\n# \"--revision HEAD\" to the svn info line, which allows\n# the latest revision to always be used.\n\nuse strict;\n\ndie \"$0: Must be run from Xcode\" unless $ENV{\"BUILT_PRODUCTS_DIR\"};\n\n# Get the current subversion revision number and use it to set the CFBundleVersion value\nmy $REV = `/usr/bin/svnversion -n ./`;\nmy $INFO = \"$ENV{BUILT_PRODUCTS_DIR}/$ENV{WRAPPER_NAME}/Contents/Info.plist\";\n#my $INFO = \"$ENV{BUILT_PRODUCTS_DIR}/$ENV{INFOPLIST_PATH}\";\n\nmy $version = $REV;\n\n# (Match the last group of digits and optional letter M/S):\n# better yet still functional regex via Kevin \"Regex Nerd\" Ballard\n($version =~ m/\\d+[MS]*$/) && ($version = $&);\n\ndie \"$0: No Subversion revision found\" unless $version;\n\nopen(FH, \"$INFO\") or die \"$0: $INFO: $!\";\nmy $info = join(\"\", <FH>);\nclose(FH);\n\n$info =~ s/\\$Revision\\$/$version/g;\n\nopen(FH, \">$INFO\") or die \"$0: $INFO: $!\";\nprint FH $info;\nclose(FH);\n";
+		};
+		B0758BAD102D6D9A0040FA5C /* Run Versioning Script */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "Run Versioning Script";
 			outputPaths = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,12 +445,26 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D11072D0486CEB800E47090 /* main.m in Sources */,
+				B03093A11037389E00737D19 /* GiornataController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		B030930710372E0100737D19 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				B030938E1037362E00737D19 /* DesktopStorage.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		B030932A10372F3E00737D19 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = B030930910372E0100737D19 /* DesktopStorage */;
+			targetProxy = B030932910372F3E00737D19 /* PBXContainerItemProxy */;
+		};
 		B0E146AA1035FBFC005B161C /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 8D1107260486CEB800E47090 /* Giornata */;
@@ -314,9 +489,71 @@
 			name = MainMenu.xib;
 			sourceTree = "<group>";
 		};
+		B030931110372E1B00737D19 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B030931210372E1B00737D19 /* English */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		B03093841037353800737D19 /* DesktopStorage.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				B030937F103734BD00737D19 /* English */,
+			);
+			name = DesktopStorage.xib;
+			sourceTree = "<group>";
+		};
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
+		B030930C10372E0200737D19 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1.0;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_ENABLE_FIX_AND_CONTINUE = YES;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plugins/desktop-storage/DesktopStorage_Prefix.pch";
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "plugins/desktop-storage/resources/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = DesktopStorage;
+				WRAPPER_EXTENSION = plugin;
+			};
+			name = Debug;
+		};
+		B030930D10372E0200737D19 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				COPY_PHASE_STRIP = YES;
+				CURRENT_PROJECT_VERSION = 1.0;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				GCC_ENABLE_FIX_AND_CONTINUE = NO;
+				GCC_ENABLE_OBJC_GC = required;
+				GCC_MODEL_TUNING = G5;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "plugins/desktop-storage/DesktopStorage_Prefix.pch";
+				GENERATE_PKGINFO_FILE = YES;
+				INFOPLIST_FILE = "plugins/desktop-storage/resources/Info.plist";
+				INSTALL_PATH = "$(HOME)/Library/Bundles";
+				OTHER_LDFLAGS = "";
+				PREBINDING = NO;
+				PRODUCT_NAME = DesktopStorage;
+				WRAPPER_EXTENSION = plugin;
+				ZERO_LINK = NO;
+			};
+			name = Release;
+		};
 		B0E1469F1035FBDF005B161C /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -346,7 +583,7 @@
 				CURRENT_PROJECT_VERSION = 1.0;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/frameworks\"",
+					"\"$(SRCROOT)/core/frameworks\"",
 				);
 				GCC_DYNAMIC_NO_PIC = NO;
 				GCC_ENABLE_FIX_AND_CONTINUE = YES;
@@ -371,7 +608,7 @@
 				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)/frameworks\"",
+					"\"$(SRCROOT)/core/frameworks\"",
 				);
 				GCC_ENABLE_OBJC_GC = required;
 				GCC_MODEL_TUNING = G5;
@@ -414,6 +651,15 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
+		B030930E10372E0200737D19 /* Build configuration list for PBXNativeTarget "DesktopStorage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				B030930C10372E0200737D19 /* Debug */,
+				B030930D10372E0200737D19 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
 		B0E146A81035FBF0005B161C /* Build configuration list for PBXAggregateTarget "Distribution" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (

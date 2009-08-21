@@ -6,16 +6,16 @@
 	<string>English</string>
 	<key>CFBundleExecutable</key>
 	<string>${EXECUTABLE_NAME}</string>
+	<key>CFBundleName</key>
+	<string>${PRODUCT_NAME}</string>
 	<key>CFBundleIconFile</key>
-	<string>Giornata.icns</string>
+	<string></string>
 	<key>CFBundleIdentifier</key>
 	<string>net.sourceforge.giornata.${PRODUCT_NAME:identifier}</string>
 	<key>CFBundleInfoDictionaryVersion</key>
 	<string>6.0</string>
-	<key>CFBundleName</key>
-	<string>${PRODUCT_NAME}</string>
 	<key>CFBundlePackageType</key>
-	<string>APPL</string>
+	<string>BNDL</string>
 	<key>CFBundleSignature</key>
 	<string>????</string>
 	<key>CFBundleVersion</key>
@@ -25,18 +25,10 @@
 	<key>CFBundleGetInfoString</key>
 	<string>${CURRENT_PROJECT_VERSION} (Revision $Revision$)</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>DesktopStorage</string>
 	<key>NSPrincipalClass</key>
-	<string>NSApplication</string>
+	<string>DesktopStorage</string>
 	<key>NSHumanReadableCopyright</key>
 	<string>(C) 2006-2009 Stephen Voida</string>
-	<key>LSMinimumSystemVersion</key>
-	<string>10.5.0</string>
-	<key>SUPublicDSAKeyFile</key>
-	<string>dsa_pub.pem</string>
-	<key>SUFeedURL</key>
-	<string>http://giornata.sourceforge.net/appcast.xml</string>
-	<key>SUScheduledCheckInterval</key>
-	<string>86400</string>
 </dict>
 </plist>
