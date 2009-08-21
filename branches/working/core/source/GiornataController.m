@@ -24,8 +24,10 @@ NSString *appSupportSubpath = @"Application Support/Giornata/PlugIns";
     if([plugInClass conformsToProtocol:@protocol(GiornataPlugIn)])
 	{
 		// Check that all of the required selectors are actually implemented
-        if([plugInClass instancesRespondToSelector:@selector(plugInInterfaceVersion)] &&
-           [plugInClass instancesRespondToSelector:@selector(plugInDisplayName)] &&
+        if([plugInClass instancesRespondToSelector:@selector(pluginLoaded:)] &&
+		   [plugInClass instancesRespondToSelector:@selector(interfaceVersion)] &&
+           [plugInClass instancesRespondToSelector:@selector(displayName)] &&
+		   [plugInClass instancesRespondToSelector:@selector(description)] &&
            [plugInClass instancesRespondToSelector:@selector(plugInConfigurationViewController)])
 		{
             return YES;
@@ -109,6 +111,8 @@ NSString *appSupportSubpath = @"Application Support/Giornata/PlugIns";
 						  [(id<GiornataPlugIn>)currInstance displayName],
 						  [[currBundle infoDictionary] objectForKey:@"CFBundleVersion"]);
 				}
+			} else {
+				NSLog(@"Invalid plugin file discovered: %@", [currBundle bundleIdentifier]);
 			}
 		}
 	}
