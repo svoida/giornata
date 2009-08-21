@@ -25,7 +25,7 @@
 	<key>CFBundleGetInfoString</key>
 	<string>${CURRENT_PROJECT_VERSION} (Revision $Revision$)</string>
 	<key>NSMainNibFile</key>
-	<string>MainMenu</string>
+	<string>Giornata</string>
 	<key>NSPrincipalClass</key>
 	<string>NSApplication</string>
 	<key>NSHumanReadableCopyright</key>
